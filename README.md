@@ -3,6 +3,10 @@
 Issues found so far (see [here](ShaderBugs/ContentView.swift)):
 
 - Passing in an additional texture fails silently (distortion effect) or breaks the ability to sample the layer (layer effect).
+  - The documentation on [`Shader.Argument.image`](https://developer.apple.com/documentation/swiftui/shader/argument/image(_:)) states:
+    > Currently only one image parameter is supported per Shader instance.
+    
+    However, it's unclear to me if that would include the `SwiftUI::Layer` in the layer effect case?
 
 - After a certain number (or size?) of arguments, shaders fail silently.
 
