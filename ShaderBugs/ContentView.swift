@@ -72,9 +72,9 @@ struct ContentView: View {
                             .layerEffect(library.layerEffectFloat2Float2(.float2(0, 1), .float2(0, 1)), maxSampleOffset: maxOffset)
                     }
 
-                    Example("Layer Effect + 3×`float2`", result: .failure) {
+                    Example("Layer Effect + 2×`float2` + `float3`", result: .failure) {
                         exampleView
-                            .layerEffect(library.layerEffectFloat2Float2(.float2(0, 1), .float2(0, 1), .float2(0, 1)), maxSampleOffset: maxOffset)
+                            .layerEffect(library.layerEffectFloat2Float2Float3(.float2(0, 1), .float2(0, 1), .float3(0, 1, 2)), maxSampleOffset: maxOffset)
                     }
                 }
             }

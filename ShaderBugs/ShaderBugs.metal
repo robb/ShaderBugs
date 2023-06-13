@@ -42,6 +42,6 @@ using namespace metal;
     return layer.sample(position + float2(4 * sin(position.y / 12 * M_PI_F), 0));
 }
 
-[[ stitchable ]] half4 layerEffectFloat2Float2Float2(float2 position, SwiftUI::Layer layer, float2 arg1, float2 arg2, float2 arg3) {
+[[ stitchable ]] half4 layerEffectFloat2Float2Float3(float2 position, SwiftUI::Layer layer, float2 arg1, float2 arg2, float3 arg3) {
     return layer.sample(position + float2(4 * sin(position.y / 12 * M_PI_F), 0));
 }
