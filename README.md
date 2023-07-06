@@ -1,3 +1,5 @@
+### ⚠️ Some if not all of these have been fixed in the latest beta, will update this repo when I have a moment.
+
 ![](img/screenshot.png)
 
 Issues found so far (see [here](ShaderBugs/ContentView.swift)):
